@@ -1,0 +1,71 @@
+ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+#bgHeader{
+    background-image: url("./images/bg_header.jpg");
+    height: 100px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* position: relative; */
+}
+
+/* Format téléphone */
+@media screen and (max-width: 400px){
+    ul{
+        display: none;
+    }
+    #menuBurger{
+        display: block;
+        width: 50px;
+        height: 60px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    #bgHeader{
+        background-image: url("images/bg_header.jpg");
+        margin-top: 80px;
+    }
+    h1{
+        display: none;
+    }
+}
+
+/* Format tablette */
+@media screen and (min-width: 401px) and (max-width: 1000px) {
+    ul{
+        display: none;
+    }
+    #menuBurger{
+        display: block;
+        width: 50px;
+        height: 60px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        
+    }
+    #bgHeader{
+        background-image: url("images/bg_footer.jpg");
+        margin-top: 100px;
+    }
+}
+
+
+
+
+/* Format ordinateur */
+@media screen and (min-width: 1001px){
+    #menuBurger{
+        display: none;
+    }
+    #bgHeader{
+        background-image: url("images/bg_header.jpg");
+        /* width: 100%; */
+        height: 500px;
+    }
+    
+
+}
